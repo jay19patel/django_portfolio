@@ -1,0 +1,40 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="section section-lg bg-default">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-9 col-lg-7 wow-outer">
+        <div class="wow slideInDown">
+          <h2>My Projects</h2>
+          <p class="text-opacity-80">Learn-Think-Create</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-20 row-lg-30">
+      {%for pj in project %}
+      <div class="col-md-5 col-lg-3 wow-outer">
+        <div class="wow fadeInUp">
+          <div class="product-featured"> 
+            <div class="product-featured-figure" id="Project{{Project.id}}"><img src="{{pj.project_image.url}}" alt="" width="370" height="295"/>
+              <div class="product-featured-button"><a class="button button-primary" id="projectview{{Project.id}}" href="{% url 'projectview' pj.id %}">{{pj.title}}</a></div>
+              <div class="product-featured-caption">
+                <p class="big">{{pj.title}}</p>
+                <h6>{{pj.small_description}}</h6>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+ 
+    
+  </div>
+</section>
+    
+{% endblock content %}

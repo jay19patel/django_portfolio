@@ -1,0 +1,221 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+ <!-- Swiper-->
+ <section class="section section-lg section-main-bunner section-main-bunner-filter text-center">
+    <div class="container">
+      <div class="box-default">
+        <h1 class="box-default-title">I'm Jay Patel</h1>
+        <h6 class="box-default-title">Computer Engineer 2023</h6>
+        <div class="box-default-decor"></div>
+        <p class="big box-default-text">Web development is difficult, only then it is fun to do. You just have to set your standards. If it were to be easy, would anyone do it?</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-lg section-inset-1 bg-gray-1 pt-lg-0">
+    <div class="container">
+      <div class="row row-60 justify-content-xl-between align-items-lg-center"><div>
+            <div><br><br><br>
+              <img class="box-image-static" src="{% static 'images/me.jpg'%} " alt="" width="300" height="300 "/></div>
+            </div>
+        
+        <div class="col-lg-6 col-xl-5 wow fadeInRight">
+          <br>
+          <h2>About Me</h2>
+          <p>My Name is Jay Patel, I'm From Gujrat Valsad.I Deeply intrested In development. I also Comfirtable with Django And Python.</p>
+          <p>My Hobby is Traveling and i also good in video and photography. I create some funny and esthatic conntent in Instagram and Youtube. </p>
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+
+
+
+{% comment %} all details {% endcomment %}
+
+<section class="section section-lg bg-gray-1">
+  <div class="container">
+    <h2 class="text-center">My Bio</h2>
+    <div class="row">
+      <div class="col-12">
+        <div class="tabs-custom tabs-horizontal tabs-classic" id="tabs-1">
+          <ul class="nav nav-tabs nav-tabs-classic">
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab">Education</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab">Skills</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3" data-toggle="tab">Internships</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="tabs-1-1">
+              <div class="box-event-modern">
+                <hr>
+                <div class="event-item-modern">
+                  <h4 class="event-item-modern-title">GSEB SSC 10th </h4>
+                  <p class="event-time">63.16%</p>
+                  <div class="event-item-modern-text">
+                  <p>Shree D.P Patel Highschool Valsad Motawagchhipa</p>
+                  </div>
+                </div>
+                <br>
+                <hr>
+                <div class="event-item-modern">
+                  <h4 class="event-item-modern-title">GSHEB HSC 12th </h4>
+                  <p class="event-time">67%  -PCM</p>
+                  <div class="event-item-modern-text">
+                    <p>Ashwamegh Vidhyalaya Valsad Sondhalwada</p>
+                  </div>
+                </div>
+                <br>
+
+                <hr>
+                <div class="event-item-modern">
+                  <h4 class="event-item-modern-title">GTU BACHELOR OF ENGINEERING</h4>
+                  <p class="event-time">6.70 CGPA</p>
+                  <div class="event-item-modern-text">
+                    <p>Government of Engineering College Rajkot</p>
+                  </div>
+                </div>
+                <hr><br>
+               
+              </div>
+            </div>
+
+            {% comment %} Skills {% endcomment %}
+            <div class="tab-pane fade" id="tabs-1-2">
+              <div class="box-event-modern">
+                <div class="event-item-modern">
+                  <p class="event-time">HTML & CSS</p>
+                  <div class="event-item-modern-text">
+                    <p>HTML is the standard markup language for Web pages. With HTML you can create your own Website.</p>
+                  </div>
+                </div>
+                <hr><br>
+
+
+                <div class="event-item-modern">
+                  <p class="event-time">PYTHON</p>
+                  <div class="event-item-modern-text">
+                    <p>Python is a popular programming language.Python can be used on a server to create web applications.</p>
+                  </div>
+                </div>
+                <hr><br>
+
+                <div class="event-item-modern">
+                  <p class="event-time">DJANGO FRAMEWORK</p>
+                  <div class="event-item-modern-text">
+                    <p>Django makes it easier to build better web apps more quickly and with less code.</p>
+                  </div>
+                </div>
+                <hr><br>
+
+                <div class="event-item-modern">
+                  <p class="event-time">MYSQL DATABASE</p>
+                
+                  <div class="event-item-modern-text">
+                    <p>MySQL HeatWave is a fully managed service that enables customers to workloads directly from their MySQL Database.</p>
+                  </div>
+                </div>
+                <hr><br>
+
+                <div class="event-item-modern">
+                  <p class="event-time">PROBLEM SOLVING</p>
+                  <div class="event-item-modern-text">
+                    <p>the ability to identify problems, brainstorm and analyze answers, and implement the best solutions</p>
+                  </div>
+                </div>
+                <hr><br>
+
+                <div class="event-item-modern">
+                  <p class="event-time">CREATIVE THINKING</p>
+                  <div class="event-item-modern-text">
+                    <p>the ability to think about a task or a problem in a new or different way, or the ability to use the imagination to generate new ideas.</p>
+                  </div>
+                </div>
+                <hr><br>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tabs-1-3">
+              <div class="box-event-modern">
+                <div class="event-item-modern">
+                  <p class="event-time">WE LOGICAL SOFTWARE SOLUTIONS</p>
+                  <div class="event-item-modern-text">
+                    <p>-Valsad</p>
+                    <p>Learn python & Django . Create a simple E-commerce Website using Django. </p>
+                  </div>
+                </div>
+                <hr><br>
+
+                <div class="event-item-modern">
+                  <p class="event-time">VNURTURE TECHNOLOGIES</p>
+                  <div class="event-item-modern-text">
+                    <p>-Ahamdabad</p>
+                    <p>Learn Basic of React Js.</p>
+                  </div>
+                </div>
+                <hr><br>
+
+                <div class="event-item-modern">
+                  <p class="event-time">WWW.NATKHATJAY.COM</p>
+                  <div class="event-item-modern-text">
+                    <p>create My own website using django python.</p>
+                  </div>
+                </div>
+                <hr><br>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% comment %} projects  {% endcomment %}
+
+<section class="section section-lg bg-default">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-9 col-lg-7 wow-outer">
+        <div class="wow slideInDown">
+          <h2>My Projects</h2>
+          <p class="text-opacity-80">Learn-Think-Create</p>
+        </div>
+      </div>
+    </div>
+
+    
+<section class="vh-100" style="background-color: #5A5A5A;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card mb-5" style="border-radius: 15px;">
+          <div class="card-body p-4" >
+            <h3 class="mb-3">Project Title</h3>
+
+
+            {%for pj in project %}
+            <p class="small mb-0"> <i class="far fa-star fa-lg"> </i> <span class="mx-2">|</span> 
+              <a href="{% url 'projectview' pj.id %}"><strong>{{pj.title}}</strong></a>
+              <strong>{{pj.title}}</strong>
+              {{pj.small_description}}
+              </p>
+            <hr class="my-4">
+            {% endfor %}
+          </div>          
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+    
+  </div>
+</section>
+
+{% endblock content %}

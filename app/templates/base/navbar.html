@@ -1,0 +1,20 @@
+{% load static %} 
+ 
+ <div class="rd-navbar-main-element">
+          <div class="tabs-custom tabs-horizontal tabs-classic" id="tabs-1">
+            
+            
+            <ul class="nav nav-tabs nav-tabs-classic">
+              
+              <div class="brand-logo-light "><a href="#"><img src="{% static 'images/njpng2.png'%}" alt="" width="170" height="170" /></a></div>
+              <li class="rd-nav-item " ><a class="nav-link {% if navbar == 'homePage'%} active {% endif %}" href="{% url 'home'%}" >Home </a></li>
+              <li class="rd-nav-item " ><a class="nav-link " href="{% url 'allprojects'%}" >Projects</a></li>
+              <li class="rd-nav-item " ><a class="nav-link " href="{% url 'aboutMe'%}" >About Me</a></li> 
+              <li class="rd-nav-item " ><a class="nav-link " href="{% url 'contact'%}" >Contect As</a></li>
+              <li class="rd-nav-item " ><a class="nav-link " href="{% url 'gallery'%}" >Gallery</a></li>
+              <div class="brand-logo-light "><a href="#"><img src="{% static 'images/njpng.png'%}" alt="" width="170" height="170" /></a></div>
+               
+            </ul>
+         </div>
+</div> 
+

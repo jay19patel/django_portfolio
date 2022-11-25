@@ -1,0 +1,97 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+      <section class="section section-lg bg-gray-1">
+        <div class="container">
+          <h2>Project Details</h2>
+        <div class="row row-50">
+            <div class="col-lg-6 pr-xl-5"><img src="{{project.project_image.url}}" alt="" width="400" height="300"/>
+            </div>
+            <div class="col-lg-6">
+              <br>
+              <h4>Project Name : {{project.title}}</h4>
+              <br>
+              <h5>Language Uses : {{project.language}}</h5>
+              <br>
+              <div class="divider"></div>
+              <p>{{project.full_description}}</p>
+              <p>{{project.small_description}}</p>
+              <p>{{project.language_use}}</p>
+              <div>
+              <img src="{{project.sample_img1.url}}" width="150"  class="img-thumbnail">
+              <img src="{{project.sample_img2.url}}" width="150"  class="img-thumbnail">
+              <img src="{{project.sample_img3.url}}" width="150"  class="img-thumbnail">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg bg-white">
+        <div class="container">
+          <h2 class="text-center">Programing Languages</h2>
+          <div class="row row-30 row-md-60">
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-modern">
+                <div class="box-icon-inner decorate-triangle"></div>
+                <div class="box-icon-caption">
+                  <h4>Python</h4>
+                  <p>Python can be used on a server to create web applications.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-modern">
+                <div class="box-icon-inner decorate-circle"></div>
+                <div class="box-icon-caption">
+                  <h4>Django</h4>
+                  <p>Django makes it easier to build web pages using Python.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-modern">
+                <div class="box-icon-inner decorate-rectangle"></div>
+                <div class="box-icon-caption">
+                  <h4>HTML & CSS </h4>
+                  <p>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-modern">
+                <div class="box-icon-inner decorate-circle"></div>
+                <div class="box-icon-caption">
+                  <h4>Bootstrap 5</h4>
+                  <p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-modern">
+                <div class="box-icon-inner decorate-triangle"></div>
+                <div class="box-icon-caption">
+                  <h4>MDBootstrap</h4>
+                  <p>Top quality open-source UI Kits</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-modern">
+                <div class="box-icon-inner decorate-rectangle"></div>
+                <div class="box-icon-caption">
+                  <h4>SQLite</h4>
+                  <p>C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+  
+
+
+
+{% endblock content %}
